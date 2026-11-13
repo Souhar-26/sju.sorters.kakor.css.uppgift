@@ -1,0 +1,294 @@
+
+/* CSS for the "Sju sorters kakor" project */
+/*body används för att ta bort standardmarginalen och ställa in teckensnittet för hela sidan. Jag använder en bakgrundsbild med en linjär gradient som täcker hela sidan och är fixerad på plats. Jag använder Times New Roman som teckensnitt, men om det inte finns tillgängligt används sans-serif som reservteckensnitt.*/
+body {
+    margin: 0;
+    font-family: "Times New Roman", sans-serif;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+        url("../images/lauren.jpg") center / cover fixed;
+}
+/*Jag använder line-height för att öka avståndet mellan raderna och göra texten mer läsbar. Jag använder h2 och h3 för att skapa rubriker med olika storlekar och färger. Jag använder a för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
+/* Jag använder hero för att skapa en hero-sektion med en bild som täcker hela bredden och är 300px hög.*/
+/* Jag använder position: relative för att kunna placera rubriken ovanpå bilden med position: absolute.*/
+/*  details och summary  skapar en utfällbar Läs mer-funktion*/
+/* intro-section  användsför att gruppera introduktionstexten och ger den sidmarginal och inre avstånd*/
+/* intro-image  används för att styla bilden i introduktionen.*/
+/* navbar  används för att skapa en navigationsmeny som ligger ovanpå hero-sektionen.*/
+/* recipe-grid  används för att skapa ett rutnät av receptkort med två kolumner på större skärmar och en kolumn på mindre skärmar.*/
+/* recipe-card  används för att styla varje receptkort med padding, gap och flexbox.*/
+/* rating  används för att visa betyg på recepten i blå färg.*/
+/* footer  används för att skapa en sidfot med bakgrundsfärg, padding och border-radius.*/
+/* social-icon  används för att visa ikoner för sociala medier i sidfoten.*/
+body {
+    line-height: 1.6;
+}
+ /*h2 används för att skapa rubriker med en viss storlek och färg. h3 används för att skapa mindre rubriker med en annan storlek och färg. a används för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
+h2 {
+    font-size: 1.6rem;
+    color: #080808;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #080808;
+}
+/* a används för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
+a {
+color: #212529;
+text-decoration: none;
+}
+/*  a:hover används för att ändra färgen på länkar när man hovrar över dem.*/
+a:hover {
+color: #0d6efd;
+}
+ /* hero används för att skapa en hero-sektion med en bild som täcker hela bredden och är 300px hög. Jag använder position: relative för att kunna placera rubriken ovanpå bilden med position: absolute.*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+}
+
+
+
+.hero > img {
+    width: 100%;
+    height:80%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(45%);
+}
+/*hero bild används för att skapa en hero bild som är 100% bred och 300px hög. Bilden är centrerad och beskuren för att passa in i hero sektionen.*/
+/*jag använder absolute positionering för att placera rubriken i mitten av hero sektionen. Jag använder transform för att flytta rubriken upp och vänster med 50% av dess egen bredd och höjd. Jag använder text-shadow för att skapa en skugga bakom texten för att göra den mer läsbar mot bakgrunden.*/
+.hero h1   {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 2px 6px black;
+}
+/* intro-box p används för att begränsa bredden på texten i introduktionsrutan till 65 tecken per rad. recipe-card p:not(rating) används för att begränsa bredden på texten i receptkorten, men inte på betygstexten.*/
+/*recipe-card p:not(.rating) används för att styla texten i receptkorten, men inte betygstexten. Jag använder font-size för att göra texten lite större och mer läsbar.*/
+.intro-box p,
+.recipe-card p:not(.rating) {
+    max-width: 65ch;
+}
+.intro-box {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 24px ;
+    background-color: #f5eee6;
+    border-radius: 8px;
+}
+/* intr-box. read-more används för att visa en "läs mer"-länk som är dold som standard. När man klickar på summary visas texten och "läs mer"-länken döljs. Samtidigt visas en "läs mindre"-länk som kan användas för att dölja texten igen.*/
+.intro-box .read-less {
+    display: none;
+}
+.intro-box summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* intro-box details[open] .read-more används för att dölja "läs mer"-länken när texten är öppen. intro-box details[open] .read-less används för att visa "läs mindre"-länken när texten är öppen. intro-box details används för att styla details-elementet som innehåller summary och p. intro-box details > p används för att placera p-elementet före summary-elementet i ordningen. intro-box details > summary används för att placera summary-elementet efter p-elementet i ordningen.*/
+.intro-box details[open] .read-more {
+    display: none;
+}
+
+.intro-box details[open] .read-less {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-box details {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-box details > p {
+    order: 1;
+}
+
+.intro-box details > summary {
+    order: 2;
+}
+
+.intro-box summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*.hero används för att styra heroområder och dess innehåll.*/
+/* Jag använder margin och padding för att skapa avstånd runt introduktionsinnehållet.*/
+/* Jag använder border-radius för att runda hörnen på bilden.*/
+.intro-section {
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-image {
+    flex: 0 1 300px;
+    margin: 20px 0;
+}
+
+.intro-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* .recipe-dropdown används för att placera undermeny i förhållande till knappen Recept och sätta listan*/
+
+.recipe-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.recipe-dropdown summary {
+    color: #fbfbfb;
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+ /*.navbar .recipe-dropdown-menu a används för att ge länkarna i receptmenyn mörk text*/
+.navbar .recipe-dropdown-menu a {
+    color: #111111
+}
+.recipe-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.recipe-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 180px;
+    padding: 12px;
+    background-color: #f5eee6;
+    border-radius: 8px;
+}
+
+.recipe-dropdown-menu a {
+    padding: 8px;
+    color: #212529; 
+}
+
+/* navbar används för att skapa en navigationsmeny som ligger ovanpå hero-sektionen.*/
+/* Jag använder position: absolute för att placera menyn i det övre högra hörnet av sidan.*/
+/* Jag använder display: flex för att arrangera länkarna horisontellt med ett gap mellan dem.*/
+/*z-index används för att se till att menyn ligger ovanpå andra element.*/
+.navbar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*navbar a används för att styla länkarna i navigationsmenyn. Jag använder color för att sätta textfärgen, text-decoration för att ta bort understrykningen och font-weight för att göra texten fetare.*/
+.navbar a {
+    color: #ede5e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+/*media används för att skapa en responsiv design som anpassar layouten efter skärmstorleken.*/
+@media (max-width: 600px) {
+    .intro-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+/*intro-image används för att styla bilden i introduktionen.*/
+    .intro-image {
+        flex-basis: auto;
+        width: min(100%, 400px);
+        align-self: center;
+    }
+}
+/*main används för att skapa en huvudsektion med padding och en bakgrundsbild med en linjär gradient som täcker hela sektionen. Jag använder url() för att ange bildens sökväg, center för att centrera bilden och cover för att täcka hela sektionen.*/
+main{
+    padding: 24px;
+    background:
+        linear-gradient(rgba(95, 87, 87, 0.9), rgba(227, 226, 226, 0.9)),
+        url("../images/lauren.jpg") center / cover;
+}
+/* recipe-grid används för att skapa ett rutnät av receptkort med två kolumner på större skärmar och en kolumn på mindre skärmar. Jag använder display: grid för att aktivera grid-layouten, grid-template-columns för att definiera kolumnerna och gap för att skapa mellanrum mellan korten.*/
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+}
+
+@media (max-width: 600px) {
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+}  
+/* recipe-card p:not(.rating) används för att styla texten i receptkorten, men inte betygstexten.*/
+.recipe-card p:not(.rating) {
+    font-size: 1.15rem;
+   
+}
+.recipe-card a {
+    font-weight: bold;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipes-area > p {
+    font-size: 1.2rem;
+    font-weight:normal;
+}
+
+.rating {
+    color: blue;
+}
+/*footer används för att skapa en sidfot med bakgrundsfärg, padding och border-radius. Jag använder box-sizing: border-box för att inkludera padding och border i elementets totala bredd och höjd.*/
+footer {
+    box-sizing: border-box;
+    margin: 80px 20px 20px;
+    padding: 24px;
+    background-color: rgba(199, 185, 185, 0.8);
+    color: rgb(6, 6, 6);
+    border-radius: 8px;
+}
+
+footer a {
+    color: rgb(109, 16, 239);
+}
+/*social-icon används för att visa ikoner för sociala medier i sidfoten. Jag använder display: flex för att arrangera ikonerna horisontellt med ett gap mellan dem.*/
+.social-icon {
+    display: flex;
+    gap: 16px;
+    font-size: 1.5rem;
+}
+
+

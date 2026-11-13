@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--DOCTYPE används för att hjälpa webbläsaren att förstå att det är HTML som används i dokumentet-->
+<html lang="sv">
+	<!--html används för att skapa ett HTML-dokument och lang används för att ange språk-->
+	<head>
+		<!--head används för att innehålla information om sidan som inte visas i webbläsaren-->
+		<meta charset="utf-8">
+		<!--meta charset="utf-8" används för att ange teckenkodning-->
+        <meta name="description" content=" lär dig nya kakorrecept">
+		<title>Sju-sorters-kakor</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!--title används för att ange titel på sidan som visas i webbläsarens flik-->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+	</head>
+	<body id="topp">
+		<header class="hero"> 
+     <nav class="navbar">
+    <div class="navbar-links">
+       <a href=index.html>Hem</a> 
+  
+       <!--details används för att skapa en detaljerad sektion-->
+       <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
+       <details class="recipe-dropdown">
+    <summary>Recept</summary>
+    <div class="recipe-dropdown-menu">
+        <a href="drommar.html" target="_blank" rel="noopener">Drömmar</a>
+        <a href="finska-pinnar.html" target="_blank" rel="noopener">Finska pinnar</a>
+        <a href="hallongrottor.html" target="_blank" rel="noopener">Hallongrottor</a>
+        <a href="kolasnittar.html" target="_blank" rel="noopener">Kolasnittar</a>
+        <a href="schackrutor.html" target="_blank" rel="noopener">Schackrutor</a>
+        <a href="chokladsnittar.html" target="_blank" rel="noopener">Chokladsnittar</a>
+        <a href="havrekakor.html" target="_blank" rel="noopener">Havrekakor</a>
+    </div>
+</details>
+    </div>
+</nav>
+      <img src="images/huvudbild.jpg" alt="en mamma och dotter som har kul och bakar tillsammans i köket">
+		</header>
+        <main>
+          <article id="finska-pinnar">  
+<h1> Finska pinnar</h1>
+ <figure>
+    <a target="_blank" href="images/mandel.jpg">
+ <img src="images/mandel.jpg" alt="mandel i en vit skål" width="400" height="300">
+    </a>
+ </figure>
+
+<p>
+Finska pinnar är spröda mördegskakor med mandel och pärlsocker på toppen. Trots namnet är de en välkänd klassiker på svenska kakfat.</p>
+
+<p><b>Ca</b> 60 kakor</p>
+<!--b används för att göra texten fet -->
+<section>
+<h2>Ingredienser</h2>
+<ul>
+    <!--li används för att skapa en lista-->
+   <li>200 g smör</li>
+   <li>1 dl strösocker</li>
+   <li>4,5 dl vetemjöl</li>
+   <li>1 tsk vaniljsocker</li>
+   <li>1 dl mandelmjöl</li>
+   <li>1 äggvita</li>
+</ul>
+</section>
+<!--/section används för att avsluta en sektion-->
+<section>
+    <h3>Garnering</h3>
+                    <ul>
+                      <li>Cirka 1 dl hackad sötmandel</li>
+                      <li>2 msk pärlsocker</li>
+                    </ul>
+</section>
+
+<section>
+    <h3>Gör så här:</h3>
+    <ol>
+        <li>Sätt ugnen på 175 °C.</li>
+        <li>Blanda mandel, mjöl och socker. Arbeta ihop blandningen med tärnat smör till en deg. Låt degen vila i kylskåp i cirka 30 minuter.</li>
+        <li>Dela degen i 8 delar och rulla varje del till en cirka 30 cm lång längd.</li>
+        <li>Lägg längderna på en plåt med bakplåtspapper.</li>
+        <li>Vispa upp äggvitan lätt och pensla längderna.</li>
+        <li>Strö över hackad mandel och pärlsocker.</li>
+        <li>Dela längderna i cirka 4 cm långa bitar och sära på bitarna så att de inte fastnar i varandra.</li>
+        <li>Grädda mitt i ugnen i cirka 10-12 minuter.</li>
+    </ol>
+   <a href="index.html#topp">Till startsidan</a>
+</section>
+			</article>
+		</main>
+         <footer>
+      <!--footer används för att skapa en footer med referenser och bildkällor-->
+      <p class="social-icon">
+        <a href="https://www.facebook.com/facebook/" aria-label="Facebook" target="_blank">
+         <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/instagram/" aria-label="Instagram" target="_blank">
+         <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p><b>Referenser:</b></p>
+      <ul>
+        <li>ICA (.u. å)<i> Havrekakor</i>. Tillgänglig på <a href="https://www.ica.se/recept/havrekakor-729379/" target="_blank">Ica</a> Hämtad (22. 10. 2026)</li>
+        <li>ICA (.u. å) <i>Chokladsnittar</i>. Tillgänglig på <a href="https://www.ica.se/recept/chokladsnittar-2131/" target="_blank">Ica</a> Hämtad (22. 10. 2026)</li>
+      </ul>
+      <p><b>Bildkällor</b>:</p>
+      <ul>
+        <li>Varela, N. (2020). <i>Healthy oat cookies</i>. 21 maj: <a href="https://unsplash.com/photos/brown-cookies-on-white-ceramic-plate-wdm4v3igGpM" target="_blank">Unsplash</a>, Hämtad (22. 10. 2026)</li>
+        <li>American Heritage Chocolate (2020). <i>Classic chocolate bars</i>. 9 augusti: <a href="https://unsplash.com/s/visual/0e2a66e5-e89f-435f-a329-140d0df990c4" target="_blank">Unsplash</a>, Hämtad (22. 10. 2026)</li>
+      </ul>
+    </footer>
+	</body>
+</html>

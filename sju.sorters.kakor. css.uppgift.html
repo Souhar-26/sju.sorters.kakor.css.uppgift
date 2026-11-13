@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--DOCTYPE används för att hjälpa webbläsaren att förstå att det är HTML som används i dokumentet-->
+<html lang="sv">
+  <!--html används för att skapa ett HTML-dokument och lang används för att ange språk-->
+  <head>
+    <!--head används för att innehålla information om sidan som inte visas i webbläsaren-->
+    <meta charset="utf-8">
+    <!--meta charset="utf-8" används för att ange teckenkodning-->
+    <meta name="description" content=" lär dig nya kakorrecept">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Font-times Roman CSS-->
+ <!--link rel=stylesheet används för att länka till en extern CSS-fil-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap"> 
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Sju-sorters-kakor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--title används för att ange titel på sidan som visas i webbläsarens flik-->
+  </head>
+  
+  <body id="topp"> 
+    <!--body används för att innehålla allt innehåll som visas i webbläsaren-->
+    <!--id=topp används för att det är målet för länkar som ska gå till sidans början,-->
+    <!--header används för att skapa en header med titel och introduktion-->
+    <header class="hero"> 
+    <img src="images/huvudbild.jpg" alt="en mamma och dotter som har kul och bakar tillsammans i köket">
+     
+      <!--nav används för att skapa en navigationsmeny-->
+      <nav class="navbar">
+    <div class="navbar-links">
+       <a href=index.html>Hem</a> 
+  
+       <!--details används för att öppnas när besökaren klickar på Recept och visar receptlänkarna-->
+       <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
+       <details class="recipe-dropdown">
+    <summary>Recept</summary>
+    <div class="recipe-dropdown-menu">
+        <a href="drommar.html" target="_blank" rel="noopener">Drömmar</a>
+        <a href="finska-pinnar.html" target="_blank" rel="noopener">Finska pinnar</a>
+        <a href="hallongrottor.html" target="_blank" rel="noopener">Hallongrottor</a>
+        <a href="kolasnittar.html" target="_blank" rel="noopener">Kolasnittar</a>
+        <a href="schackrutor.html" target="_blank" rel="noopener">Schackrutor</a>
+        <a href="chokladsnittar.html" target="_blank" rel="noopener">Chokladsnittar</a>
+        <a href="havrekakor.html" target="_blank" rel="noopener">Havrekakor</a>
+    </div>
+</details>
+    </div>
+</nav>
+      <h1>Sju sorters kakor</h1>
+      <!--h1 används för att skapa en rubrik på sidan-->
+    </header>
+    <!--main används för att skapa huvudinnehållet på sidan-->
+    <!--content-area används för att skapa en container för innehållet på sidan-->
+    <main class="content-area">
+      <!--div används för att skapa en container för introduktionen-->
+    <!--intro-section används för att skapa en introduktionssektion-->
+     <!--intro-box används för att skapa en container för introduktionsinnehållet-->
+    <div class="intro-section">
+      <div class="intro-box">
+        <h2>En svensk fikatradition</h2> 
+        <p>Välkommen till vår sida om sju sorters kakor! Här hittar du recept på klassiska svenska småkakor som är perfekta för fika och kalas. Lär dig baka drömmar, finska pinnar, hallongrottor, kolasnittar, schackrutor, chokladsnittar och havrekakor med våra enkla steg-för-steg instruktioner.</p>
+  <p>Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och syftar på det minsta antalet kaksorter som etiketten tidigare föreskrev att kakfatet ska innehålla.</p>
+  <!--details används för att skapa en detaljerad sektion-->
+  <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
+  <!--span används för att etiketterna växlar mellan läs mer och visa mindre med hjälp av CSS-->
+  <details>
+   <summary>
+      <span class="read-more">Läs mer</span>
+      <span class="read-less">Visa mindre</span>
+    </summary>
+    <p>Tanken är att erbjuda ett varierat urval av småkakor så att det finns något för olika smaker: spröda, mjuka, chokladiga, kryddiga och fruktiga kakor. Utöver småkakorna serveras även vetebröd och tårta. Traditionen förknippas ofta med kafferep och högtider men passar lika bra till vardagsfika eller kalas och har funnits sedan 1800-talet.</p>
+  </details>
+    </div>
+    </div>
+    <hr>
+<section class="recipes-area">
+  <h2 id="recipes-heading">Recept på sju småkakor</h2>
+  <p>På den här sidan finns recept på sju småkakor att prova på!</p>
+    <!--div används för att skapa en container för receptkort-->
+      <div class="recipe-grid">
+    <article class="recipe-card">
+          <h2>Drömmar</h2> 
+        <img src="images/drommar.jpg" alt="Drömmar på ett kakfat">
+           
+           <p>Spröda småkakor med mild vaniljsmak...</p>
+            <a href="drommar.html" target="_blank">Läs mer</a>
+           <p class="rating">★★★★☆</p>
+  </article>
+ 
+  <article class="recipe-card">
+       <h2>Finska pinnar</h2>      
+    <img src="images/mandel.jpg" alt="Finska pinnar">
+            <p>Spröda mandelkakor med pärlsocker...</p>
+            <a href="finska-pinnar.html" target="_blank">Läs mer</a>
+            <p class="rating">★★★★☆</p>
+               
+  </article>
+      
+        <article class="recipe-card">
+    
+          <!--img används för att skapa en bild på sidan-->
+          <h2>Hallongrottor</h2> 
+           <img src="images/hallongrottor.jpg" alt="Hallongrottor">
+            <p>Små mördegskakor med hallonsylt i mitten...</p>
+            <a href="hallongrottor.html" target="_blank">Läs mer</a>
+            <p class="rating">★★★★☆</p>
+        </article>
+
+        <article class="recipe-card">
+             <h2>Kolasnittar</h2> 
+             <img src="images/kolasnittar.jpg" alt="Kolasnittar">
+             <p>Knäckiga småkakor med smak av kola...</p>
+             <a href="kolasnittar.html" target="_blank">Läs mer</a>
+             <p class="rating">★★★★☆</p>
+        </article>
+
+
+       <article class="recipe-card">
+            <h2>Schackrutor</h2>
+           <img src="images/dark.jpg" alt="Kvinna i ljusblå skjorta knådar brun deg på en vit köksbänk. Bakplåt, kakformar och skålar med ingredienser syns runtomkring i en lugn hemmamiljö.">
+           <p>Tvåfärgade småkakor med vanilj- och chokladsmak...</p>
+           <a href="schackrutor.html" target="_blank">Läs mer</a>
+           <p class="rating">★★★★☆</p>
+      </article>
+
+
+        <article class="recipe-card">
+          <h2>Chokladsnittar</h2>
+          <img src="images/chokladsnittar.jpg" alt="Chokladsnittar">
+          <p>Mjuka och chokladiga kakor med vanilj- och chokladsmak...</p>
+           <a href="chokladsnittar.html" target="_blank">Läs mer</a>
+          <p class="rating">★★★★☆</p>
+        </article>
+      
+        <article class="recipe-card">
+            <h2>Havrekakor</h2>
+            <img src="images/havrekakor.jpg" alt="Havrekakor">
+            <p>Knäckiga kakor med havregryn...</p>
+            <a href="havrekakor.html" target="_blank">Läs mer</a>
+            <p class="rating">★★★★☆</p>      
+        </article>
+      </div>
+</section> 
+</main>
+
+<hr>
+    
+    <footer>
+      <!--footer används för att skapa en footer med referenser och bildkällor-->
+      <p class="social-icon">
+        <!--i class används för att skapa en ikon-->
+        <!--aria-label används för att ge länken ett namn som skärmläsare kan läsa upp.-->
+        <!--target_blank används för att öppna länken i en ny flik-->
+        <a href="https://www.facebook.com/facebook/" aria-label="Facebook" target="_blank">
+         <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/instagram/" aria-label="Instagram" target="_blank">
+         <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p><b>Referenser:</b></p>
+      <!--ul används för att skapa en lista med referenser-->
+      <!--li används för attmarkera en enskild post i lista-->
+      <ul>
+        <li>ICA (.u. å)<i> Havrekakor</i>. Tillgänglig på <a href="https://www.ica.se/recept/havrekakor-729379/" target="_blank">Ica</a> Hämtad (22. 10. 2026)</li>
+        <li>ICA (.u. å) <i>Chokladsnittar</i>. Tillgänglig på <a href="https://www.ica.se/recept/chokladsnittar-2131/" target="_blank">Ica</a> Hämtad (22. 10. 2026)</li>
+      </ul>
+      <p><b>Bildkällor</b>:</p>
+      <ul>
+        <li>Varela, N. (2020). <i>Healthy oat cookies</i>. 21 maj: <a href="https://unsplash.com/photos/brown-cookies-on-white-ceramic-plate-wdm4v3igGpM" target="_blank">Unsplash</a>, Hämtad (22. 10. 2026)</li>
+        <li>American Heritage Chocolate (2020). <i>Classic chocolate bars</i>. 9 augusti: <a href="https://unsplash.com/s/visual/0e2a66e5-e89f-435f-a329-140d0df990c4" target="_blank">Unsplash</a>, Hämtad (22. 10. 2026)</li>
+      </ul>
+    </footer>
+  </body>
+</html>
