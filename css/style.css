@@ -89,6 +89,8 @@ color: #0d6efd;
 
 .intro-box {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro-box p {
