@@ -277,11 +277,10 @@ main{
 }
 
 .recipe-card img {
-    width: min(100%, 200px);
-    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    border-radius: 50%;
-    align-self: flex-start
+    border-radius: 8px;
 }
 
 .recipes-area > p {
