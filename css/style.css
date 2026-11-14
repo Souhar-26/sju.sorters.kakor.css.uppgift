@@ -86,6 +86,18 @@ color: #0d6efd;
     background-color: #f5eee6;
     border-radius: 8px;
 }
+
+.intro-box {
+    text-align: center;
+}
+
+.intro-box p {
+    font-size: 1.2rem;
+}
+
+.intro-box h2 {
+    font-size: 2rem;
+}
 /* intr-box. read-more används för att visa en "läs mer"-länk som är dold som standard. När man klickar på summary visas texten och "läs mer"-länken döljs. Samtidigt visas en "läs mindre"-länk som kan användas för att dölja texten igen.*/
 .intro-box .read-less {
     display: none;
