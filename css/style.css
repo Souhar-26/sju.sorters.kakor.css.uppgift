@@ -23,6 +23,10 @@ body {
 body {
     line-height: 1.6;
 }
+
+body#topp .hero h1 {
+    font-size: 3.5rem;
+}
  /*h2 används för att skapa rubriker med en viss storlek och färg. h3 används för att skapa mindre rubriker med en annan storlek och färg. a används för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
 h2 {
     font-size: 1.6rem;
@@ -46,7 +50,7 @@ color: #0d6efd;
 .hero {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 450px;
     overflow: visible;
 }
 
@@ -170,7 +174,7 @@ color: #0d6efd;
     padding-top: 80px;
 }
 
-.recipes-are p {
+.recipes-area p {
     font-size: 1.2rem;
     font-weight: normal;
     margin-bottom: 32px;
@@ -302,6 +306,10 @@ main{
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.recipes-area {
+    padding: 80px 20px 0;
 }
 
 .recipes-area > p {
