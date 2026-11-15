@@ -25,6 +25,7 @@
     <img src="images/huvudbild.jpg" alt="en mamma och dotter som har kul och bakar tillsammans i köket">
      
       <!--nav används för att skapa en navigationsmeny-->
+      <!--div class används för att grppera innehåll och ge behållaren ett namn som kan stylas med CSS -->
       <nav class="navbar">
     <div class="navbar-links">
        <a href=index.html>Hem</a> 
@@ -43,7 +44,17 @@
         <a href="havrekakor.html" target="_blank" rel="noopener">Havrekakor</a>
     </div>
 </details>
+       <a href="om-oss.html" target="_blank" rel="noopener">Om oss</a>
     </div>
+    <!--form class används för att skapa ett sökformulär som kan stylas med CSS-->
+    <form class="recipe-search" role="search" onsubmit="return false">
+      <input
+        type="search"
+        id="recipe-search"
+        placeholder="Sök recept..."
+        aria-label="Sök bland recept"
+      >
+    </form>
 </nav>
       <h1>Sju sorters kakor</h1>
       <!--h1 används för att skapa en rubrik på sidan-->
@@ -51,26 +62,7 @@
     <!--main används för att skapa huvudinnehållet på sidan-->
     <!--content-area används för att skapa en container för innehållet på sidan-->
     <main class="content-area">
-      <!--div används för att skapa en container för introduktionen-->
-    <!--intro-section används för att skapa en introduktionssektion-->
-     <!--intro-box används för att skapa en container för introduktionsinnehållet-->
-    <div class="intro-section">
-      <div class="intro-box">
-        <h2>En svensk fikatradition</h2> 
-        <p>Välkommen till vår sida om sju sorters kakor! Här hittar du recept på klassiska svenska småkakor som är perfekta för fika och kalas. Lär dig baka drömmar, finska pinnar, hallongrottor, kolasnittar, schackrutor, chokladsnittar och havrekakor med våra enkla steg-för-steg instruktioner.</p>
-  <p>Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och syftar på det minsta antalet kaksorter som etiketten tidigare föreskrev att kakfatet ska innehålla.</p>
-  <!--details används för att skapa en detaljerad sektion-->
-  <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
-  <!--span används för att etiketterna växlar mellan läs mer och visa mindre med hjälp av CSS-->
-  <details>
-   <summary>
-      <span class="read-more">Läs mer</span>
-      <span class="read-less">Visa mindre</span>
-    </summary>
-    <p>Tanken är att erbjuda ett varierat urval av småkakor så att det finns något för olika smaker: spröda, mjuka, chokladiga, kryddiga och fruktiga kakor. Utöver småkakorna serveras även vetebröd och tårta. Traditionen förknippas ofta med kafferep och högtider men passar lika bra till vardagsfika eller kalas och har funnits sedan 1800-talet.</p>
-  </details>
-    </div>
-    </div>
+     
     <hr>
 <section class="recipes-area">
   <h2 id="recipes-heading">Recept på sju småkakor</h2>

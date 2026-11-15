@@ -204,6 +204,15 @@ color: #0d6efd;
     color: #212529; 
 }
 
+
+.recipe-search input {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font: inherit;
+    max-width: 100%
+}
+
 /* navbar används för att skapa en navigationsmeny som ligger ovanpå hero-sektionen.*/
 /* Jag använder position: absolute för att placera menyn i det övre högra hörnet av sidan.*/
 /* Jag använder display: flex för att arrangera länkarna horisontellt med ett gap mellan dem.*/
