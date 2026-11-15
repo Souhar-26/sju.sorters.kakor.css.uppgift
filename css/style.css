@@ -255,6 +255,11 @@ color: #0d6efd;
     display: flex;
     gap: 20px;
 }
+
+.navbar-links > a,
+.navbar-links > .recipe-dropdown > summary {
+    font-size: 1.25rem;
+}
 /*media används för att skapa en responsiv design som anpassar layouten efter skärmstorleken.*/
 @media (max-width: 600px) {
     .intro-section {
