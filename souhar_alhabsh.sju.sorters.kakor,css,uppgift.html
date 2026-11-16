@@ -19,8 +19,8 @@
   
   <body id="topp"> 
     <!--body används för att innehålla allt innehåll som visas i webbläsaren-->
-    <!--topp används för att skapa en top-sektion-->
-    <!--header används för att skapa en header med titel och introduktion-->
+    <!--id="topp" gör att länkar kan hoppa till sidans början-->
+    <!--Sidhuvudet innehåller bilden, menyn och sidans rubrik-->
     <header class="hero"> 
     <img src="images/huvudbild.jpg" alt="en mamma och dotter som har kul och bakar tillsammans i köket">
      
@@ -61,7 +61,7 @@
   <p>Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och syftar på det minsta antalet kaksorter som etiketten tidigare föreskrev att kakfatet ska innehålla.</p>
   <!--details används för att skapa en detaljerad sektion-->
   <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
-  <!--span används för att skapa en länk för att visa/dölja detaljer-->
+  <!--Texterna ändras beroende på om delen är öppen eller stängd-->
   <details>
    <summary>
       <span class="read-more">Läs mer</span>
@@ -148,8 +148,8 @@
       <!--footer används för att skapa en footer med referenser och bildkällor-->
       <p class="social-icon">
         <!--i class används för att skapa en ikon-->
-        <!--area-label används för att ange en beskrivning av ikonen-->
-        <!--blank används för att öppna länken i en ny flik-->
+        <!--aria-label ger länken ett namn för skärmläsare-->
+        <!--target="_blank" öppnar länken i en ny flik-->
         <a href="https://www.facebook.com/facebook/" aria-label="Facebook" target="_blank">
          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
         </a>
