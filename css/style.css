@@ -198,15 +198,11 @@ color: #0d6efd;
  /*.navbar .recipe-dropdown-menu a används för att ge länkarna i receptmenyn mörk text*/
 .navbar .recipe-dropdown-menu a {
     color: #111111
-}
-.recipe-dropdown summary::-webkit-details-marker {
-    display: none;
-}
-
+} 
 .recipe-dropdown-menu {
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     z-index: 3;
     display: flex;
     flex-direction: column;
