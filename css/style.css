@@ -9,7 +9,6 @@ body {
         url("../images/lauren.jpg") center / cover fixed;
 }
 /*Jag använder line-height för att öka avståndet mellan raderna och göra texten mer läsbar. Jag använder h2 och h3 för att skapa rubriker med olika storlekar och färger. Jag använder a för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
-/* Herobilden täcker hela bredden. Området är 70% av skärmhöjden och minst 500px högt.*/
 /* Jag använder position: relative för att kunna placera rubriken ovanpå bilden med position: absolute.*/
 /*  details och summary  skapar en utfällbar Läs mer-funktion*/
 /* intro-section  användsför att gruppera introduktionstexten och ger den sidmarginal och inre avstånd*/
