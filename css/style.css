@@ -63,7 +63,7 @@ color: #0d6efd;
     object-fit: cover;
     object-position: center center;
     display: block;
-    filter: brightness(45%);
+    filter: brightness(70%);
 }
 /*hero bild används för att skapa en hero bild som är 100% bred och 300px hög. Bilden är centrerad och beskuren för att passa in i hero sektionen.*/
 /*jag använder absolute positionering för att placera rubriken i mitten av hero sektionen. Jag använder transform för att flytta rubriken upp och vänster med 50% av dess egen bredd och höjd. Jag använder text-shadow för att skapa en skugga bakom texten för att göra den mer läsbar mot bakgrunden.*/
