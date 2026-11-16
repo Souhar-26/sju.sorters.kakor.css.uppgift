@@ -377,6 +377,11 @@ article a[href="index.html#topp"] {
     font-weight: bold;
 }
 
+
+article#drömmar figure img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
 /*footer används för att skapa en sidfot med bakgrundsfärg, padding och border-radius. Jag använder box-sizing: border-box för att inkludera padding och border i elementets totala bredd och höjd.*/
 footer {
     box-sizing: border-box;
