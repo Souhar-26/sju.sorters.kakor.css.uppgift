@@ -1,112 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--DOCTYPE används för att hjälpa webbläsaren att förstå att det är HTML som används i dokumentet-->
 <html lang="sv">
-	<!--html används för att skapa ett HTML-dokument och lang används för att ange språk-->
-	<head>
-		<!--head används för att innehålla information om sidan som inte visas i webbläsaren-->
-		<meta charset="utf-8">
-		<!--meta charset="utf-8" används för att ange teckenkodning-->
-		<meta name="description" content=" lär dig nya kakorrecept">
-		<title>Sju-sorters-kakor</title>
-		<link rel="stylesheet" href="css/style.css">
-		<!--title används för att ange titel på sidan som visas i webbläsarens flik-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
-	</head>
-	<body id="topp">
-		<header class="hero"> 
-     <nav class="navbar">
-    <div class="navbar-links">
-       <a href=index.html>Hem</a> 
-    
-       <!--details används för att skapa en detaljerad sektion-->
-       <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
-       <details class="recipe-dropdown">
-    <summary>Recept</summary>
-    <div class="recipe-dropdown-menu">
-        <a href="drommar.html" target="_blank" rel="noopener">Drömmar</a>
-        <a href="finska-pinnar.html" target="_blank" rel="noopener">Finska pinnar</a>
-        <a href="hallongrottor.html" target="_blank" rel="noopener">Hallongrottor</a>
-        <a href="kolasnittar.html" target="_blank" rel="noopener">Kolasnittar</a>
-        <a href="schackrutor.html" target="_blank" rel="noopener">Schackrutor</a>
-        <a href="chokladsnittar.html" target="_blank" rel="noopener">Chokladsnittar</a>
-        <a href="havrekakor.html" target="_blank" rel="noopener">Havrekakor</a>
-    </div>
-</details>
-        <a href="om-oss.html" target="_blank" rel="noopener">Om oss</a>
-    </div>
-    <form class="recipe-search" role="search" onsubmit="return false">
-  <input
-    type="search"
-    id="recipe-search"
-    placeholder="Sök recept..."
-    aria-label="Sök bland recept"
-  >
-</form>
-<button type="button" class="login-button">Logga in</button>
-</nav>
-      <img src="images/huvudbild.jpg" alt="en mamma och dotter som har kul och bakar tillsammans i köket">
-		</header>
-<main>
-<article id="havrekakor">
-    <h1> Havrekakor</h1>
-   <figure>
-    <a target="_blank" href="images/havrekakor.jpg">
-   <img src="images/havrekakor.jpg" alt="Havrekakor med chokladflingor" width="400" height="300">
-</a>
-   <figcaption> 
+  <!--html används för att skapa ett HTML-dokument och lang används för att ange språk-->
+  <head>
+    <!--head används för att innehålla information om sidan som inte visas i webbläsaren-->
+    <meta charset="utf-8" />
+    <!--meta charset="utf-8" används för att ange teckenkodning-->
+    <meta name="description" content=" lär dig nya kakorrecept" />
+    <title>Sju-sorters-kakor</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--title används för att ange titel på sidan som visas i webbläsarens flik-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"
+    />
+  </head>
+  <body id="topp">
+    <header class="hero">
+      <nav class="navbar">
+        <div class="navbar-links">
+          <a href="index.html">Hem</a>
 
-    <b>Figur:</b> <i>Healthy oat cookies</i>. Källa: Varela (2020)
-</figcaption>
-</figure>
+          <!--details används för att skapa en detaljerad sektion-->
+          <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
+          <details class="recipe-dropdown">
+            <summary>Recept</summary>
+            <div class="recipe-dropdown-menu">
+              <a href="drommar.html" target="_blank" rel="noopener">Drömmar</a>
+              <a href="finska-pinnar.html" target="_blank" rel="noopener"
+                >Finska pinnar</a
+              >
+              <a href="hallongrottor.html" target="_blank" rel="noopener"
+                >Hallongrottor</a
+              >
+              <a href="kolasnittar.html" target="_blank" rel="noopener"
+                >Kolasnittar</a
+              >
+              <a href="schackrutor.html" target="_blank" rel="noopener"
+                >Schackrutor</a
+              >
+              <a href="chokladsnittar.html" target="_blank" rel="noopener"
+                >Chokladsnittar</a
+              >
+              <a href="havrekakor.html" target="_blank" rel="noopener"
+                >Havrekakor</a
+              >
+            </div>
+          </details>
+          <a href="om-oss.html" target="_blank" rel="noopener">Om oss</a>
+        </div>
+        <form class="recipe-search" role="search" onsubmit="return false;">
+          <input
+            type="search"
+            id="recipe-search"
+            placeholder="Sök recept..."
+            aria-label="Sök bland recept"
+          />
+        </form>
+        <button type="button" class="login-button">Logga in</button>
+      </nav>
+      <img
+        src="images/huvudbild.jpg"
+        alt="en mamma och dotter som har kul och bakar tillsammans i köket"
+      />
+    </header>
+    <main>
+      <article id="havrekakor">
+        <h1>Havrekakor</h1>
+        <figure>
+          <a target="_blank" href="images/havrekakor.jpg">
+            <img
+              src="images/havrekakor.jpg"
+              alt="Havrekakor med chokladflingor"
+              width="400"
+              height="300"
+            />
+          </a>
+          <figcaption>
+            <b>Figur:</b> <i>Healthy oat cookies</i>. Källa: Varela (2020)
+          </figcaption>
+        </figure>
 
-   <p> Enkla att baka är havrekakorna som blir perfekt söta, krispiga och lite, lite sega inuti. Rör ihop alla ingredienser, gärna med en elvisp, så krossas havregrynen lite. Snabbt och enkelt bakar du därmed de godaste havrekakorna att bjuda på.</p>
-<p><b>Ca</b> 32 st</p>
-<section>
-<h2>Ingredienser</h2>
-<ul>
-<li>175 g rumsvarmt smör</li>
-<li>4 dl havregryn</li>
-<li>2 dl strösocker</li>
-<li>2 dl vetemjöl</li>
-<li>2 tsk bakpulver</li>
-</ul>
-</section>
+        <p>
+          Enkla att baka är havrekakorna som blir perfekt söta, krispiga och
+          lite, lite sega inuti. Rör ihop alla ingredienser, gärna med en
+          elvisp, så krossas havregrynen lite. Snabbt och enkelt bakar du därmed
+          de godaste havrekakorna att bjuda på.
+        </p>
+        <p><b>Ca</b> 32 st</p>
+        <section>
+          <h2>Ingredienser</h2>
+          <ul>
+            <li>175 g rumsvarmt smör</li>
+            <li>4 dl havregryn</li>
+            <li>2 dl strösocker</li>
+            <li>2 dl vetemjöl</li>
+            <li>2 tsk bakpulver</li>
+          </ul>
+        </section>
 
-<section>
-<h3>Gör så här:</h3>
-<ol>
-<li>Sätt ugnen på 200°C.</li>
-<li>Häll smör, havregryn och socker i en bunke. Vispa snabbt ihop med en elvisp.</li>
-<li>Rör ihop mjöl och bakpulver och vänd ner i bunken med havregrynen och blanda. Arbeta ihop till en fast deg med händerna.</li>
-<li>Forma små bollar av degen och lägg på två plåtar med bakplåtspapper.</li>
-<li>Sätt in plåtarna, i omgångar, i mitten av ugnen ca 10 - 12 minuter.</li>
-<li>Låt kakorna svalna på plåten.</li>
-</ol>
-<a href="index.html#topp">Till startsidan</a>
- </section>
-			</article>
-		</main>
-		 <footer>
+        <section>
+          <h3>Gör så här:</h3>
+          <ol>
+            <li>Sätt ugnen på 200°C.</li>
+            <li>
+              Häll smör, havregryn och socker i en bunke. Vispa snabbt ihop med
+              en elvisp.
+            </li>
+            <li>
+              Rör ihop mjöl och bakpulver och vänd ner i bunken med havregrynen
+              och blanda. Arbeta ihop till en fast deg med händerna.
+            </li>
+            <li>
+              Forma små bollar av degen och lägg på två plåtar med
+              bakplåtspapper.
+            </li>
+            <li>
+              Sätt in plåtarna, i omgångar, i mitten av ugnen ca 10 - 12
+              minuter.
+            </li>
+            <li>Låt kakorna svalna på plåten.</li>
+          </ol>
+          <a href="index.html#topp">Till startsidan</a>
+        </section>
+      </article>
+    </main>
+    <footer>
       <!--footer används för att skapa en footer med referenser och bildkällor-->
+      <p class="social-icon"></p>
       <p class="social-icon">
-<p class="social-icon">
-        <a href="https://www.facebook.com/facebook/" aria-label="Facebook" target="_blank">
-         <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        <a
+          href="https://www.facebook.com/facebook/"
+          aria-label="Facebook"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
         </a>
-        <a href="https://www.instagram.com/instagram/" aria-label="Instagram" target="_blank">
-         <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <a
+          href="https://www.instagram.com/instagram/"
+          aria-label="Instagram"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
         </a>
       </p>
       <p><b>Referenser:</b></p>
       <ul>
-        <li>ICA (.u. å)<i> Havrekakor</i>. Tillgänglig på <a href="https://www.ica.se/recept/havrekakor-729379/" target="_blank">Ica</a> Hämtad (22. 10. 2026)</li>
-        <li>ICA (.u. å) <i>Chokladsnittar</i>. Tillgänglig på <a href="https://www.ica.se/recept/chokladsnittar-2131/" target="_blank">Ica</a> Hämtad (22. 10. 2026)</li>
+        <li>
+          ICA (.u. å)<i> Havrekakor</i>. Tillgänglig på
+          <a href="https://www.ica.se/recept/havrekakor-729379/" target="_blank"
+            >Ica</a
+          >
+          Hämtad (22. 10. 2026)
+        </li>
+        <li>
+          ICA (.u. å) <i>Chokladsnittar</i>. Tillgänglig på
+          <a
+            href="https://www.ica.se/recept/chokladsnittar-2131/"
+            target="_blank"
+            >Ica</a
+          >
+          Hämtad (22. 10. 2026)
+        </li>
       </ul>
       <p><b>Bildkällor</b>:</p>
       <ul>
-        <li>Varela, N. (2020). <i>Healthy oat cookies</i>. 21 maj: <a href="https://unsplash.com/photos/brown-cookies-on-white-ceramic-plate-wdm4v3igGpM" target="_blank">Unsplash</a>, Hämtad (22. 10. 2026)</li>
-        <li>American Heritage Chocolate (2020). <i>Classic chocolate bars</i>. 9 augusti: <a href="https://unsplash.com/s/visual/0e2a66e5-e89f-435f-a329-140d0df990c4" target="_blank">Unsplash</a>, Hämtad (22. 10. 2026)</li>
+        <li>
+          Varela, N. (2020). <i>Healthy oat cookies</i>. 21 maj:
+          <a
+            href="https://unsplash.com/photos/brown-cookies-on-white-ceramic-plate-wdm4v3igGpM"
+            target="_blank"
+            >Unsplash</a
+          >, Hämtad (22. 10. 2026)
+        </li>
+        <li>
+          American Heritage Chocolate (2020). <i>Classic chocolate bars</i>. 9
+          augusti:
+          <a
+            href="https://unsplash.com/s/visual/0e2a66e5-e89f-435f-a329-140d0df990c4"
+            target="_blank"
+            >Unsplash</a
+          >, Hämtad (22. 10. 2026)
+        </li>
       </ul>
     </footer>
-	</body>
+  </body>
 </html>
