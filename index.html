@@ -1,29 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--DOCTYPE används för att hjälpa webbläsaren att förstå att det är HTML som används i dokumentet-->
 <html lang="sv">
   <!--html används för att skapa ett HTML-dokument och lang används för att ange språk-->
   <head>
+    <meta charset="utf-8">
+    <title>Sju-sorters-kakor</title>
     <!--head används för att innehålla information om sidan som inte visas i webbläsaren-->
-    <meta charset="utf-8" />
     <!--meta charset="utf-8" används för att ange teckenkodning-->
-    <meta name="description" content=" lär dig nya kakorrecept" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content=" lär dig nya kakorrecept">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font-times Roman CSS-->
     <!--link rel=stylesheet används för att länka till en extern CSS-fil-->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap"
-    />
+    >
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"
-    />
-    <title>Sju-sorters-kakor</title>
-    <link rel="stylesheet" href="css/style.css" />
+    >
+    <link rel="stylesheet" href="css/style.css">
     <!--title används för att ange titel på sidan som visas i webbläsarens flik-->
   </head>
-
-  <body id="topp">
+  <body>
     <!--body används för att innehålla allt innehåll som visas i webbläsaren-->
     <!--id=topp används för att det är målet för länkar som ska gå till sidans början,-->
     <!--Sidhuvudet innehåller bilden, menyn och sidans rubrik-->
@@ -31,14 +30,14 @@
       <img
         src="images/huvudbild.jpg"
         alt="en mamma och dotter som har kul och bakar tillsammans i köket"
-      />
+      >
 
       <!--nav används för att skapa en navigationsmeny-->
       <!--div class används för att grppera innehåll och ge behållaren ett namn som kan stylas med CSS -->
-      <nav class="navbar">
-        <div class="navbar-links">
+      <nav class="topnav">
+        <a class="site-title" href="index.html">Sju sorters kakor</a>
+        <div class="navbar-right">
           <a href="index.html">Hem</a>
-
           <!--details används för att öppnas när besökaren klickar på Recept och visar receptlänkarna-->
           <!--summary används för att skapa en sammanfattning av detaljerad sektion-->
           <details class="recipe-dropdown">
@@ -74,7 +73,7 @@
             id="recipe-search"
             placeholder="Sök recept..."
             aria-label="Sök bland recept"
-          />
+          >
         </form>
         <button type="button" class="login-button">Logga in</button>
       </nav>
@@ -91,7 +90,7 @@
         <div class="recipe-grid">
           <article class="recipe-card">
             <h2>Drömmar</h2>
-            <img src="images/drommar.jpg" alt="Drömmar på ett kakfat" />
+            <img src="images/drommar.jpg" alt="En vit skål fylld med mandlar står på ett mörkt, väderbitet träbord. Närbilden har mjukt ljus och en oskarp bakgrund som ger bilden en lugn, rustik känsla.">
 
             <p>Spröda småkakor med mild vaniljsmak...</p>
             <a href="drommar.html" target="_blank">Läs mer</a>
@@ -100,7 +99,7 @@
 
           <article class="recipe-card">
             <h2>Finska pinnar</h2>
-            <img src="images/mandel.jpg" alt="Finska pinnar" />
+            <img src="images/mandel.jpg" alt="En vit skål fylld med mandlar står på ett blågrått dukat träbord.">
             <p>Spröda mandelkakor med pärlsocker...</p>
             <a href="finska-pinnar.html" target="_blank">Läs mer</a>
             <p class="rating">★★★★☆</p>
@@ -109,7 +108,7 @@
           <article class="recipe-card">
             <!--img används för att skapa en bild på sidan-->
             <h2>Hallongrottor</h2>
-            <img src="images/hallongrottor.jpg" alt="Hallongrottor" />
+            <img src="images/hallongrottor.jpg" alt="Gyllenbruna hallongrottor i vita pappersformar.">
             <p>Små mördegskakor med hallonsylt i mitten...</p>
             <a href="hallongrottor.html" target="_blank">Läs mer</a>
             <p class="rating">★★★★☆</p>
@@ -117,7 +116,7 @@
 
           <article class="recipe-card">
             <h2>Kolasnittar</h2>
-            <img src="images/kolasnittar.jpg" alt="Kolasnittar" />
+            <img src="images/kolasnittar.jpg" alt="kolasnittar i ett vitt kakfat.">
             <p>Knäckiga småkakor med smak av kola...</p>
             <a href="kolasnittar.html" target="_blank">Läs mer</a>
             <p class="rating">★★★★☆</p>
@@ -127,8 +126,8 @@
             <h2>Schackrutor</h2>
             <img
               src="images/dark.jpg"
-              alt="Kvinna i ljusblå skjorta knådar brun deg på en vit köksbänk. Bakplåt, kakformar och skålar med ingredienser syns runtomkring i en lugn hemmamiljö."
-            />
+                alt="Gyllene, triangelformade havrekakor ligger överlappade på ett vitt kakfat med fot."
+            >
             <p>Tvåfärgade småkakor med vanilj- och chokladsmak...</p>
             <a href="schackrutor.html" target="_blank">Läs mer</a>
             <p class="rating">★★★★☆</p>
@@ -136,7 +135,7 @@
 
           <article class="recipe-card">
             <h2>Chokladsnittar</h2>
-            <img src="images/chokladsnittar.jpg" alt="Chokladsnittar" />
+            <img src="images/chokladsnittar.jpg" alt="En vit skål fylld med bruna mandlar står på ett mörkt, väderbitet träbord. Närbilden och det mjuka ljuset ger bilden en varm, rustik känsla.">
             <p>Mjuka och chokladiga kakor med vanilj- och chokladsmak...</p>
             <a href="chokladsnittar.html" target="_blank">Läs mer</a>
             <p class="rating">★★★★☆</p>
@@ -144,7 +143,7 @@
 
           <article class="recipe-card">
             <h2>Havrekakor</h2>
-            <img src="images/havrekakor.jpg" alt="Havrekakor" />
+            <img src="images/havrekakor.jpg" alt=" havrekakor ligger på ett vitt kakfat på ett ljust köksbord.">
             <p>Knäckiga kakor med havregryn...</p>
             <a href="havrekakor.html" target="_blank">Läs mer</a>
             <p class="rating">★★★★☆</p>
