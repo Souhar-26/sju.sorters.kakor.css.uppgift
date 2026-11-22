@@ -1,5 +1,5 @@
-/* CSS for the "Sju sorters kakor" project */
-/*body används för att ta bort standardmarginalen och ställa in teckensnittet för hela sidan. Jag använder en bakgrundsbild med en linjär gradient som täcker hela sidan och är fixerad på plats. Jag använder Times New Roman som teckensnitt, men om det inte finns tillgängligt används sans-serif som reservteckensnitt.*/
+/* Stilar för hela webbplatsen. */
+/* Grundstil för sidan. */
 body {
   margin: 0;
   font-family: "Times New Roman", sans-serif;
@@ -7,17 +7,8 @@ body {
     linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
     url("../images/lauren.jpg") center / cover fixed;
 }
-/*Jag använder line-height för att öka avståndet mellan raderna och göra texten mer läsbar. Jag använder h2 och h3 för att skapa rubriker med olika storlekar och färger. Jag använder a för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
-/* Jag använder position: relative för att kunna placera rubriken ovanpå bilden med position: absolute.*/
-/*  details och summary  skapar en utfällbar Läs mer-funktion*/
-/* intro-section  användsför att gruppera introduktionstexten och ger den sidmarginal och inre avstånd*/
-/* intro-image  används för att styla bilden i introduktionen.*/
-/* navbar  används för att skapa en navigationsmeny som ligger ovanpå hero-sektionen.*/
-/* recipe-grid  används för att skapa ett rutnät av receptkort med två kolumner på större skärmar och en kolumn på mindre skärmar.*/
-/* recipe-card  används för att styla varje receptkort med padding, gap och flexbox.*/
-/* rating  används för att visa betyg på recepten i blå färg.*/
-/* footer  används för att skapa en sidfot med bakgrundsfärg, padding och border-radius.*/
-/* social-icon  används för att visa ikoner för sociala medier i sidfoten.*/
+
+/* Text, rubriker och länkar. */
 body {
   line-height: 1.6;
 }
@@ -25,7 +16,7 @@ body {
 body#topp .hero h1 {
   font-size: 3.5rem;
 }
-/*h2 används för att skapa rubriker med en viss storlek och färg. h3 används för att skapa mindre rubriker med en annan storlek och färg. a används för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
+
 h2 {
   font-size: 1.6rem;
   color: #080808;
@@ -35,16 +26,17 @@ h3 {
   font-size: 1.2rem;
   color: #080808;
 }
-/* a används för att skapa länkar med en viss färg och utan understrykning, men när man hovrar över dem ändras färgen till blå.*/
+
 a {
   color: #212529;
   text-decoration: none;
 }
-/*  a:hover används för att ändra färgen på länkar när man hovrar över dem.*/
+
 a:hover {
   color: #0d6efd;
 }
-/* Den här positioneringen gör att rubriken kan ligga ovanpå bilden.*/
+
+/* Stor bild och rubrik högst upp på sidan. */
 .hero {
   position: relative;
   width: 100%;
@@ -61,8 +53,7 @@ a:hover {
   display: block;
   filter: brightness(70%);
 }
-/* Bilden fyller heroområdet och beskärs för att passa.*/
-/*jag använder absolute positionering för att placera rubriken i mitten av hero sektionen. Jag använder transform för att flytta rubriken upp och vänster med 50% av dess egen bredd och höjd. Jag använder text-shadow för att skapa en skugga bakom texten för att göra den mer läsbar mot bakgrunden.*/
+
 .hero h1 {
   position: absolute;
   top: 50%;
@@ -75,12 +66,13 @@ a:hover {
   text-align: center;
   text-shadow: 0 2px 6px black;
 }
-/* intro-box p används för att begränsa bredden på texten i introduktionsrutan till 65 tecken per rad. recipe-card p:not(rating) används för att begränsa bredden på texten i receptkorten, men inte på betygstexten.*/
-/*recipe-card p:not(.rating) används för att styla texten i receptkorten, men inte betygstexten. Jag använder font-size för att göra texten lite större och mer läsbar.*/
+
+/* Introduktionstext och ruta. */
 .intro-box p,
 .recipe-card p:not(.rating) {
   max-width: 65ch;
 }
+
 .intro-box {
   flex: 1;
   min-width: 0;
@@ -110,16 +102,17 @@ a:hover {
 .intro-box h2 {
   font-size: 2rem;
 }
-/* intr-box. read-more används för att visa en "läs mer"-länk som är dold som standard. När man klickar på summary visas texten och "läs mer"-länken döljs. Samtidigt visas en "läs mindre"-länk som kan användas för att dölja texten igen.*/
+
+/* Funktionen för att visa och dölja mer text. */
 .intro-box .read-less {
   display: none;
 }
+
 .intro-box summary {
   cursor: pointer;
   font-weight: bold;
 }
 
-/* intro-box details[open] .read-more används för att dölja "läs mer"-länken när texten är öppen. intro-box details[open] .read-less används för att visa "läs mindre"-länken när texten är öppen. intro-box details används för att styla details-elementet som innehåller summary och p. intro-box details > p används för att placera p-elementet före summary-elementet i ordningen. intro-box details > summary används för att placera summary-elementet efter p-elementet i ordningen.*/
 .intro-box details[open] .read-more {
   display: none;
 }
@@ -147,9 +140,7 @@ a:hover {
   font-weight: bold;
 }
 
-/*.hero används för att styra heroområder och dess innehåll.*/
-/* Jag använder margin och padding för att skapa avstånd runt introduktionsinnehållet.*/
-/* Jag använder border-radius för att runda hörnen på bilden.*/
+/* Introduktionsbild och placering. */
 .intro-section {
   display: block;
   margin: 0 auto;
@@ -172,14 +163,14 @@ a:hover {
   padding-top: 80px;
 }
 
+/* Avstånd och text i receptdelen. */
 .recipes-area p {
   font-size: 1.2rem;
   font-weight: normal;
   margin-bottom: 32px;
 }
 
-/* .recipe-dropdown används för att placera undermeny i förhållande till knappen Recept och sätta listan*/
-
+/* Meny, receptlista, sökfält och knapp. */
 .recipe-dropdown {
   position: relative;
   display: inline-block;
@@ -191,10 +182,11 @@ a:hover {
   font-weight: 600;
   list-style: none;
 }
-/*.navbar .recipe-dropdown-menu a används för att ge länkarna i receptmenyn mörk text*/
+
 .navbar .recipe-dropdown-menu a {
   color: #111111;
 }
+
 .recipe-dropdown-menu a {
   padding: 8px;
   color: #212529;
@@ -208,9 +200,6 @@ a:hover {
   max-width: 100%;
 }
 
-/* Menyn ligger ovanpå bilden med 20px avstånd från sidkanterna.*/
-/* Flexbox placerar meny, sökfält och logga in på samma rad.*/
-/*z-index används för att se till att menyn ligger ovanpå andra element.*/
 .topnav {
   position: absolute;
   top: 15px;
@@ -222,10 +211,11 @@ a:hover {
   align-items: center;
   gap: 12px;
 }
+
 .navbar-right > a:last-child {
   margin-right: 20px;
 }
-/*navbar a används för att styla länkarna i navigationsmenyn. Jag använder color för att sätta textfärgen, text-decoration för att ta bort understrykningen och font-weight för att göra texten fetare.*/
+
 .navbar {
   position: absolute;
   top: 15px;
@@ -260,9 +250,11 @@ a:hover {
   gap: 20px;
  align-items: center;
 }
+
  .recipe-dropdown {
   position: relative;
  }
+
 .recipe-dropdown-menu {
   position: absolute;
   top: calc(100% + 8px);
@@ -277,19 +269,23 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
+
 .recipe-dropdown:hover .recipe-dropdown-menu,
 .recipe-dropdown:focus-within .recipe-dropdown-menu {
   display: flex;
 }
+
 .topnav a,
 .topnav summary {
   color: #ede5e5;
   font-weight: 600;
   font-size: 1.25rem;
 }
+
 .recipe-dropdown-menu a {
   color: #212529;
 }
+
 .recipe-search {
   margin: 0;
 }
@@ -321,20 +317,21 @@ a:hover {
   color: white;
 }
 
-/*media används för att skapa en responsiv design som anpassar layouten efter skärmstorleken.*/
+/* Anpassar introduktionen till små skärmar. */
 @media (max-width: 600px) {
   .intro-section {
     flex-direction: column;
     align-items: stretch;
   }
-  /*intro-image används för att styla bilden i introduktionen.*/
+
   .intro-image {
     flex-basis: auto;
     width: min(100%, 400px);
     align-self: center;
   }
 }
-/*main används för att skapa en huvudsektion med padding och en bakgrundsbild med en linjär gradient som täcker hela sektionen. Jag använder url() för att ange bildens sökväg, center för att centrera bilden och cover för att täcka hela sektionen.*/
+
+/* Huvudinnehållet på sidan. */
 main {
   padding: 24px;
   background:
@@ -345,7 +342,8 @@ main {
 .recipe-search {
   width: 140px;
 }
-/* recipe-grid används för att skapa ett rutnät av receptkort med två kolumner på större skärmar och en kolumn på mindre skärmar. Jag använder display: grid för att aktivera grid-layouten, grid-template-columns för att definiera kolumnerna och gap för att skapa mellanrum mellan korten.*/
+
+/* Receptkort i ett rutnät. */
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -364,10 +362,11 @@ main {
   gap: 8px;
   padding: 16px;
 }
-/* recipe-card p:not(.rating) används för att styla texten i receptkorten, men inte betygstexten.*/
+
 .recipe-card p:not(.rating) {
   font-size: 1.15rem;
 }
+
 .recipe-card a {
   font-weight: bold;
 }
@@ -389,11 +388,12 @@ main {
   margin-bottom: 32px;
 }
 
+/* Visar receptens betyg. */
 .rating {
   color: blue;
 }
 
-/*article figure används för att centrera bildenoch placera bildtexten under den med mellanrum. article figure img används för att anpassa och styla receptbilden.*/
+/* Receptbild och bildtext. */
 article figure {
   display: flex;
   flex-direction: column;
@@ -415,8 +415,8 @@ article figure img {
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
-/*article a[] används för att länken till startsidan görs fetare på receptsidfor*/
-/*article är behållaren för receptets innehåll och a betyder länk. Tillsammans väljer article a länkar som finns inne i receptet. Den fullständiga selektorn*/
+
+/* Länken tillbaka till startsidan. */
 article a[href="index.html#topp"] {
   font-weight: bold;
 }
@@ -425,6 +425,8 @@ article#drömmar figure img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* Färg vid hovring över meny- och receptlänkar. */
 .navbar-right > a:hover,
 .navbar-links > a:hover,
 .recipe-dropdown summary:hover,
@@ -438,7 +440,7 @@ article#drömmar figure img {
   text-shadow: 0 0 6px rgb(198, 198, 229), 0 0 12px blue;
 }
 
-/*footer används för att skapa en sidfot med bakgrundsfärg, padding och border-radius. Jag använder box-sizing: border-box för att inkludera padding och border i elementets totala bredd och höjd.*/
+/* Sidfotens utseende. */
 footer {
   box-sizing: border-box;
   margin: 80px 20px 20px;
@@ -451,7 +453,8 @@ footer {
 footer a {
   color: rgb(109, 16, 239);
 }
-/*social-icon används för att visa ikoner för sociala medier i sidfoten. Jag använder display: flex för att arrangera ikonerna horisontellt med ett gap mellan dem.*/
+
+/* Sociala medier-ikoner i sidfoten. */
 .social-icon {
   display: flex;
   gap: 16px;
