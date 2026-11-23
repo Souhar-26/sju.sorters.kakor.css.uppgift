@@ -1,23 +1,34 @@
 <!DOCTYPE html>
+<!-- Dokumenttypen talar om för webbläsaren att sidan använder HTML. -->
 <html lang="sv">
+  <!-- lang="sv" visar att sidans huvudspråk är svenska. -->
   <head>
+    <!-- Head innehåller inställningar och länkar som inte syns direkt på sidan. -->
     <meta charset="utf-8">
+    <!-- UTF-8 gör att svenska bokstäver som å, ä och ö visas rätt. -->
     <title>Om oss - Sju sorters kakor</title>
+    <!-- Description ger en kort sammanfattning till sökmotorer. -->
     <meta name="description" content="Om sju sorters kakor och den svenska fikatraditionen.">
+    <!-- Viewport gör att sidan anpassar sig till skärmens bredd. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Länkarna hämtar ikoner och gemensam design. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
+    <!-- Body innehåller allt synligt innehåll på sidan. -->
     <header class="hero">
+      <!-- Hero visar en stor bild överst och fungerar som sidans huvudområde. -->
       <img
         src="images/huvudbild.jpg"
         alt="En mamma och dotter bakar tillsammans i köket">
 
       <nav class="navbar">
+        <!-- Nav samlar länkarna som besökaren använder för att navigera. -->
         <a class="site-title" href="index.html">Sju sorters kakor</a>
         <div class="navbar-links">
+          <!-- Details och summary gör receptmenyn öppningsbar. -->
           <a href="index.html">Hem</a>
           <details class="recipe-dropdown">
             <summary>Recept</summary>
@@ -45,6 +56,7 @@
           </details>
           <a href="om-oss.html" aria-current="page">Om oss</a>
         </div>
+        <!-- Sökfältet låter besökaren skriva en sökning bland recepten. -->
         <form class="recipe-search" role="search" onsubmit="return false;">
           <input
             type="search"
@@ -56,10 +68,13 @@
       </nav>
 
       <h1>Om oss</h1>
+      <!-- H1 är sidans huvudsakliga rubrik. -->
     </header>
 
     <main class="content-area">
+      <!-- Main innehåller sidan viktigaste information. -->
       <section class="intro-section">
+        <!-- Section samlar den beskrivande texten i ett avgränsat område. -->
         <div class="intro-box">
           <h2>En svensk fikatradition</h2>
           <p>
@@ -75,6 +90,7 @@
             föreskrev att kakfatet ska innehålla.
           </p>
           <details>
+            <!-- Details gömmer den längre texten tills besökaren öppnar den. -->
             <summary>
               <span class="read-more">Läs mer</span>
               <span class="read-less">Visa mindre</span>

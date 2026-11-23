@@ -2,7 +2,9 @@
 /* Grundstil för sidan. */
 body {
   margin: 0;
+  /* Times New Roman används som huvudsakligt typsnitt för tydlig text. */
   font-family: "Times New Roman", sans-serif;
+  /* Bakgrunden använder ett vit överdrag över bilden så texten blir lättare att läsa. */
   background:
     linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
     url("../images/lauren.jpg") center / cover fixed;
@@ -13,6 +15,7 @@ body {
   line-height: 1.6;
 }
 
+/* Större rubrik på sidor med body-ID och hero. */
 body#topp .hero h1 {
   font-size: 3.5rem;
 }
@@ -29,9 +32,11 @@ h3 {
 
 a {
   color: #212529;
+  /* Textdekorationen tas bort så länkarna får en renare utformning. */
   text-decoration: none;
 }
 
+/* Hover gör länken blå och tydligare att klicka. */
 a:hover {
   color: #0d6efd;
 }
@@ -48,12 +53,15 @@ a:hover {
 .hero > img {
   width: 100%;
   height: 100%;
+  /* object-fit cover gör att bilden fyller området utan att bli utdragen. */
   object-fit: cover;
   object-position: center center;
   display: block;
+  /* Mörkare bild gör att ljus text ovanpå syns tydligare. */
   filter: brightness(70%);
 }
 
+/* Rubriken placeras mitt i hero-bilden. */
 .hero h1 {
   position: absolute;
   top: 50%;
@@ -70,9 +78,11 @@ a:hover {
 /* Introduktionstext och ruta. */
 .intro-box p,
 .recipe-card p:not(.rating) {
+  /* En begränsad radlängd gör lång text lättare att läsa. */
   max-width: 65ch;
 }
 
+/* Infoboxen får yta, marginal och rundade hörn. */
 .intro-box {
   flex: 1;
   min-width: 0;
@@ -113,6 +123,7 @@ a:hover {
   font-weight: bold;
 }
 
+/* Details visar bara den kompakta länken tills blocket öppnas. */
 .intro-box details[open] .read-more {
   display: none;
 }
@@ -127,6 +138,7 @@ a:hover {
   flex-direction: column;
 }
 
+/* Texten visas före sammanfattningslänken i den öppnade rutan. */
 .intro-box details > p {
   order: 1;
 }
@@ -147,6 +159,7 @@ a:hover {
   padding: 0 20px;
 }
 
+/* Bildens maxbredd begränsas och förhindrar att den tar för mycket plats. */
 .intro-image {
   flex: 0 1 300px;
   margin: 20px 0;
@@ -176,6 +189,7 @@ a:hover {
   display: inline-block;
 }
 
+/* Summary ser ut som en menytext men fungerar som Details-knapp. */
 .recipe-dropdown summary {
   color: #fbfbfb;
   cursor: pointer;
@@ -192,6 +206,7 @@ a:hover {
   color: #212529;
 }
 
+/* Sökfältet får rund kant och samma typsnitt som resten av sidan. */
 .recipe-search input {
   padding: 0.5rem 0.75rem;
   border: 1px solid #ccc;
@@ -236,6 +251,7 @@ a:hover {
 .navbar-links {
   display: flex;
   gap: 20px;
+  /* Sidolänkarna skjuts mot höger i navigeringen. */
   margin-left: auto;
   margin-right: 0;
 }
@@ -290,6 +306,7 @@ a:hover {
   margin: 0;
 }
 
+/* Knappen för inloggning får rund kant och genomskinlig bakgrund. */
 .login-button {
   padding: 0.5rem 0.8rem;
   border: 1px solid #ede5e5;
@@ -334,6 +351,7 @@ a:hover {
 /* Huvudinnehållet på sidan. */
 main {
   padding: 24px;
+  /* Huvudinnehållet får en gråvit ton över bakgrundsbilden. */
   background:
     linear-gradient(rgba(95, 87, 87, 0.9), rgba(227, 226, 226, 0.9)),
     url("../images/lauren.jpg") center / cover;
@@ -346,6 +364,7 @@ main {
 /* Receptkort i ett rutnät. */
 .recipe-grid {
   display: grid;
+  /* Två lika breda kolumner visar recept kort på större skärmar. */
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 48px;
 }
@@ -359,6 +378,7 @@ main {
 .recipe-card {
   display: flex;
   flex-direction: column;
+  /* Gap skapar jämnt avstånd mellan kortets innehåll. */
   gap: 8px;
   padding: 16px;
 }
@@ -374,6 +394,7 @@ main {
 .recipe-card img {
   width: 100%;
   height: 200px;
+  /* object-fit cover beskär bilden jämnt utan att ändra bildens proportioner. */
   object-fit: cover;
   border-radius: 8px;
 }
