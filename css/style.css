@@ -227,10 +227,6 @@ a:hover {
   gap: 12px;
 }
 
-.navbar-right > a:last-child {
-  margin-right: 20px;
-}
-
 .navbar {
   position: absolute;
   top: 15px;
@@ -250,10 +246,10 @@ a:hover {
 
 .navbar-links {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   /* Sidolänkarna skjuts mot höger i navigeringen. */
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 24px;
 }
 
 .navbar-links > a,
@@ -263,8 +259,9 @@ a:hover {
 
 .navbar-right {
   display: flex;
-  gap: 20px;
- align-items: center;
+  gap: 32px;
+  align-items: center;
+  margin-left: 24px;
 }
 
  .recipe-dropdown {
