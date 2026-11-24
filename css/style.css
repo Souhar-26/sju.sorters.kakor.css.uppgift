@@ -224,7 +224,7 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 
 .navbar {
@@ -235,7 +235,7 @@ a:hover {
   z-index: 2;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 
 .navbar a {
@@ -246,10 +246,9 @@ a:hover {
 
 .navbar-links {
   display: flex;
-  gap: 32px;
+  gap: 20px;
   /* Sidolänkarna skjuts mot höger i navigeringen. */
   margin-left: auto;
-  margin-right: 24px;
 }
 
 .navbar-links > a,
@@ -259,9 +258,8 @@ a:hover {
 
 .navbar-right {
   display: flex;
-  gap: 32px;
+  gap: 20px;
   align-items: center;
-  margin-left: 24px;
 }
 
  .recipe-dropdown {
