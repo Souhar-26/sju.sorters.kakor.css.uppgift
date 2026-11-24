@@ -106,7 +106,7 @@ a:hover {
 }
 
 .intro-box p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .intro-box h2 {
@@ -178,7 +178,7 @@ a:hover {
 
 /* Avstånd och text i receptdelen. */
 .recipes-area p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: normal;
   margin-bottom: 32px;
 }
@@ -379,7 +379,7 @@ main {
 }
 
 .recipe-card p:not(.rating) {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 .recipe-card a {
@@ -399,7 +399,7 @@ main {
 }
 
 .recipes-area > p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: normal;
   margin-bottom: 32px;
 }
@@ -455,9 +455,8 @@ article#drömmar figure img {
   color: #212529;
   text-shadow: 0 0 6px rgb(198, 198, 229), 0 0 12px blue;
 }
-/* Gör texten i p-element större men ändrar inte sidfoten */
-.content-area p,
-.content-area .recipe-card p {
+/* Gör texten i p-element större men ändrar inte sidfoten. */
+main p {
   font-size: 1.25rem;
 }
 
