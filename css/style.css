@@ -219,12 +219,16 @@ a:hover {
   position: absolute;
   top: 15px;
   left: 20px;
-  right: 20px;
+  right: 0;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
+}
+
+.topnav > :last-child {
+  margin-right: 20px;
 }
 
 .navbar {
@@ -457,6 +461,10 @@ article#drömmar figure img {
 }
 /* Gör texten i p-element större men ändrar inte sidfoten. */
 main p {
+  font-size: 1.25rem;
+}
+
+main li {
   font-size: 1.25rem;
 }
 
