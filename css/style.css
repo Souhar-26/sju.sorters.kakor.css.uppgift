@@ -457,6 +457,11 @@ article#drömmar figure img {
   color: #212529;
   text-shadow: 0 0 6px rgb(198, 198, 229), 0 0 12px blue;
 }
+/* Gör texten i p-element större men ändrar inte sidfoten */
+.content-area p,
+.content-area .recipe-card p {
+  font-size: 1.25rem;
+}
 
 /* Sidfotens utseende. */
 footer {
