@@ -399,7 +399,7 @@ main {
 }
 
 .recipes-area {
-  padding: 80px 20px 0;
+  padding: 48px 20px;
 }
 
 .recipes-area > p {
@@ -441,7 +441,7 @@ article a[href="index.html#topp"] {
   font-weight: bold;
 }
 
-article#drömmar figure img {
+article#drommar figure img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
@@ -458,6 +458,10 @@ article#drömmar figure img {
 .recipe-dropdown-menu a:hover {
   color: #212529;
   text-shadow: 0 0 6px rgb(198, 198, 229), 0 0 12px blue;
+}
+/* Skapar mellanrum efter receptavsnitten. */
+main > article {
+  margin-bottom: 48px;
 }
 /* Gör texten i p-element större men ändrar inte sidfoten. */
 main p {
