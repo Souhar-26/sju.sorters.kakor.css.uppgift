@@ -2,8 +2,8 @@
 /* Grundstil för sidan. */
 body {
   margin: 0;
-  /* Times New Roman används som huvudsakligt typsnitt för tydlig text. */
-  font-family: "Times New Roman", sans-serif;
+  /* Ett vänligt och lättläst typsnitt ger sidan en varm känsla. */
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   /* Bakgrunden använder ett vit överdrag över bilden så texten blir lättare att läsa. */
   background:
     linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
@@ -78,7 +78,7 @@ a:hover {
   box-sizing: border-box;
   margin: 20px auto;
   padding: 24px;
-  background-color: #f5eee6;
+  background-color: rgba(234, 212, 212, 0.6);
   border-radius: 8px;
 }
 .intro-box {
@@ -321,7 +321,7 @@ main li {
   font-size: 1.25rem;
 }
 main > article {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(234, 212, 212, 0.6);
   border-radius: 8px;
   padding: 24px;
 }
