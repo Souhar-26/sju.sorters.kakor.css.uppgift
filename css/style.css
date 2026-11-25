@@ -134,7 +134,8 @@ a:hover {
 .intro-section {
   display: block;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 24px;
+  border-bottom: 1px solid #8b8178;
 }
 /* Bildens maxbredd begränsas och förhindrar att den tar för mycket plats. */
 .intro-image {
@@ -308,9 +309,9 @@ main {
     linear-gradient(rgba(95, 87, 87, 0.9), rgba(227, 226, 226, 0.9)),
     url("../images/lauren.jpg") center / cover;
 }
-/* Skapar mellanrum efter receptavsnitten. */
-main > article {
-  margin-bottom: 48px;
+/* Skapar extra mellanrum mellan de fullständiga recepten. */
+main > article + article {
+  margin-top: 64px;
 }
 /* Gör texten i p-element större men ändrar inte sidfoten. */
 main p {
@@ -327,7 +328,8 @@ main li {
   display: grid;
   /* Två lika breda kolumner visar recept kort på större skärmar. */
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 48px;
+  row-gap: 32px;
+  column-gap: 48px;
 }
 @media (max-width: 600px) {
   .recipe-grid {
@@ -357,6 +359,7 @@ main li {
 .recipes-area {
   padding: 48px 20px;
 }
+
 .recipes-area > p {
   font-size: 1.25rem;
   font-weight: normal;
