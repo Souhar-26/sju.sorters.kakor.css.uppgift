@@ -9,38 +9,31 @@ body {
     linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
     url("../images/lauren.jpg") center / cover fixed;
 }
-
 /* Text, rubriker och länkar. */
 body {
   line-height: 1.6;
 }
-
 /* Större rubrik på sidor med body-ID och hero. */
 body#topp .hero h1 {
   font-size: 3.5rem;
 }
-
 h2 {
   font-size: 1.6rem;
   color: #080808;
 }
-
 h3 {
   font-size: 1.2rem;
   color: #080808;
 }
-
 a {
   color: #212529;
   /* Textdekorationen tas bort så länkarna får en renare utformning. */
   text-decoration: none;
 }
-
 /* Hover gör länken blå och tydligare att klicka. */
 a:hover {
   color: #0d6efd;
 }
-
 /* Stor bild och rubrik högst upp på sidan. */
 .hero {
   position: relative;
@@ -49,7 +42,6 @@ a:hover {
   min-height: 500px;
   overflow: hidden;
 }
-
 .hero > img {
   width: 100%;
   height: 100%;
@@ -60,7 +52,6 @@ a:hover {
   /* Mörkare bild gör att ljus text ovanpå syns tydligare. */
   filter: brightness(70%);
 }
-
 /* Rubriken placeras mitt i hero-bilden. */
 .hero h1 {
   position: absolute;
@@ -74,14 +65,12 @@ a:hover {
   text-align: center;
   text-shadow: 0 2px 6px black;
 }
-
 /* Introduktionstext och ruta. */
 .intro-box p,
 .recipe-card p:not(.rating) {
   /* En begränsad radlängd gör lång text lättare att läsa. */
   max-width: 65ch;
 }
-
 /* Infoboxen får yta, marginal och rundade hörn. */
 .intro-box {
   flex: 1;
@@ -92,52 +81,42 @@ a:hover {
   background-color: #f5eee6;
   border-radius: 8px;
 }
-
 .intro-box {
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
   text-align: left;
 }
-
 .intro-box {
   margin-left: auto;
   margin-right: auto;
 }
-
 .intro-box p {
   font-size: 1.25rem;
 }
-
 .intro-box h2 {
   font-size: 2rem;
 }
-
 /* Funktionen för att visa och dölja mer text. */
 .intro-box .read-less {
   display: none;
 }
-
 .intro-box summary {
   cursor: pointer;
   font-weight: bold;
 }
-
 /* Details visar bara den kompakta länken tills blocket öppnas. */
 .intro-box details[open] .read-more {
   display: none;
 }
-
 .intro-box details[open] .read-less {
   display: flex;
   flex-direction: column;
 }
-
 .intro-box details {
   display: flex;
   flex-direction: column;
 }
-
 /* Texten visas före sammanfattningslänken i den öppnade rutan. */
 .intro-box details > p {
   order: 1;
@@ -145,50 +124,42 @@ a:hover {
 
 .intro-box details > summary {
   order: 2;
-}
 
 .intro-box summary {
   cursor: pointer;
   font-weight: bold;
 }
-
 /* Introduktionsbild och placering. */
 .intro-section {
   display: block;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 /* Bildens maxbredd begränsas och förhindrar att den tar för mycket plats. */
 .intro-image {
   flex: 0 1 300px;
   margin: 20px 0;
 }
-
 .intro-image img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
-
 .recipe-area {
   padding-top: 80px;
 }
-
 /* Avstånd och text i receptdelen. */
 .recipes-area p {
   font-size: 1.25rem;
   font-weight: normal;
   margin-bottom: 32px;
 }
-
 /* Meny, receptlista, sökfält och knapp. */
 .recipe-dropdown {
   position: relative;
   display: inline-block;
 }
-
 /* Summary ser ut som en menytext men fungerar som Details-knapp. */
 .recipe-dropdown summary {
   color: #fbfbfb;
@@ -200,12 +171,10 @@ a:hover {
 .navbar .recipe-dropdown-menu a {
   color: #111111;
 }
-
 .recipe-dropdown-menu a {
   padding: 8px;
   color: #212529;
 }
-
 /* Sökfältet får rund kant och samma typsnitt som resten av sidan. */
 .recipe-search input {
   padding: 0.5rem 0.75rem;
@@ -214,7 +183,7 @@ a:hover {
   font: inherit;
   max-width: 100%;
 }
-
+/* Placera navigerringen högst upp i sidhuvudet och ordnar innehållet på rad. */
 .topnav {
   position: absolute;
   top: 15px;
@@ -226,11 +195,10 @@ a:hover {
   align-items: center;
   gap: 20px;
 }
-
+/* Ger menys sista element, inloggningsknappen, avstånd från högerkanten. */
 .topnav > :last-child {
   margin-right: 20px;
 }
-
 .navbar {
   position: absolute;
   top: 15px;
@@ -241,35 +209,29 @@ a:hover {
   align-items: center;
   gap: 20px;
 }
-
 .navbar a {
   color: #ede5e5;
   text-decoration: none;
   font-weight: 600;
 }
-
 .navbar-links {
   display: flex;
   gap: 20px;
   /* Sidolänkarna skjuts mot höger i navigeringen. */
   margin-left: auto;
 }
-
 .navbar-links > a,
 .navbar-links > .recipe-dropdown > summary {
   font-size: 1.25rem;
 }
-
 .navbar-right {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-
  .recipe-dropdown {
   position: relative;
  }
-
 .recipe-dropdown-menu {
   position: absolute;
   top: calc(100% + 8px);
@@ -284,27 +246,22 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
-
 .recipe-dropdown:hover .recipe-dropdown-menu,
 .recipe-dropdown:focus-within .recipe-dropdown-menu {
   display: flex;
 }
-
 .topnav a,
 .topnav summary {
   color: #ede5e5;
   font-weight: 600;
   font-size: 1.25rem;
 }
-
 .recipe-dropdown-menu a {
   color: #212529;
 }
-
 .recipe-search {
   margin: 0;
 }
-
 /* Knappen för inloggning får rund kant och genomskinlig bakgrund. */
 .login-button {
   padding: 0.5rem 0.8rem;
@@ -315,11 +272,9 @@ a:hover {
   font: inherit;
   font-weight: 600;
 }
-
 .login-button {
   color: white;
 }
-
 .site-title {
   margin-right: auto;
   font-size: 1.25rem;
@@ -327,19 +282,16 @@ a:hover {
   text-decoration: none;
   white-space: nowrap;
 }
-
 .navbar .site-title,
 .topnav .site-title {
   color: white;
 }
-
 /* Anpassar introduktionen till små skärmar. */
 @media (max-width: 600px) {
   .intro-section {
     flex-direction: column;
     align-items: stretch;
   }
-
   .intro-image {
     flex-basis: auto;
     width: min(100%, 400px);
@@ -355,11 +307,20 @@ main {
     linear-gradient(rgba(95, 87, 87, 0.9), rgba(227, 226, 226, 0.9)),
     url("../images/lauren.jpg") center / cover;
 }
-
+/* Skapar mellanrum efter receptavsnitten. */
+main > article {
+  margin-bottom: 48px;
+}
+/* Gör texten i p-element större men ändrar inte sidfoten. */
+main p {
+  font-size: 1.25rem;
+}
+main li {
+  font-size: 1.25rem;
+}
 .recipe-search {
   width: 140px;
 }
-
 /* Receptkort i ett rutnät. */
 .recipe-grid {
   display: grid;
@@ -367,13 +328,11 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 48px;
 }
-
 @media (max-width: 600px) {
   .recipe-grid {
     grid-template-columns: 1fr;
   }
 }
-
 .recipe-card {
   display: flex;
   flex-direction: column;
@@ -381,15 +340,12 @@ main {
   gap: 8px;
   padding: 16px;
 }
-
 .recipe-card p:not(.rating) {
   font-size: 1.25rem;
 }
-
 .recipe-card a {
   font-weight: bold;
 }
-
 .recipe-card img {
   width: 100%;
   height: 200px;
@@ -397,11 +353,9 @@ main {
   object-fit: cover;
   border-radius: 8px;
 }
-
 .recipes-area {
   padding: 48px 20px;
 }
-
 .recipes-area > p {
   font-size: 1.25rem;
   font-weight: normal;
@@ -412,7 +366,6 @@ main {
 .rating {
   color: blue;
 }
-
 /* Receptbild och bildtext. */
 article figure {
   display: flex;
@@ -421,13 +374,11 @@ article figure {
   gap: 12px;
   margin: 24px 0;
 }
-
 article figure a {
   display: block;
   width: 100%;
   max-width: 500px;
 }
-
 article figure img {
   display: block;
   width: 100%;
@@ -435,12 +386,10 @@ article figure img {
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
-
 /* Länken tillbaka till startsidan. */
 article a[href="index.html#topp"] {
   font-weight: bold;
 }
-
 article#drommar figure img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -454,22 +403,9 @@ article#drommar figure img {
   color: white;
   text-shadow: 0 0 6px rgb(198, 198, 229), 0 0 12px blue;
 }
-
 .recipe-dropdown-menu a:hover {
   color: #212529;
   text-shadow: 0 0 6px rgb(198, 198, 229), 0 0 12px blue;
-}
-/* Skapar mellanrum efter receptavsnitten. */
-main > article {
-  margin-bottom: 48px;
-}
-/* Gör texten i p-element större men ändrar inte sidfoten. */
-main p {
-  font-size: 1.25rem;
-}
-
-main li {
-  font-size: 1.25rem;
 }
 
 /* Sidfotens utseende. */
@@ -481,11 +417,9 @@ footer {
   color: rgb(6, 6, 6);
   border-radius: 8px;
 }
-
 footer a {
   color: rgb(109, 16, 239);
 }
-
 /* Sociala medier-ikoner i sidfoten. */
 .social-icon {
   display: flex;
