@@ -310,7 +310,7 @@ main {
     url("../images/lauren.jpg") center / cover;
 }
 /* Skapar extra mellanrum mellan de fullständiga recepten. */
-main > article + article {
+main > article {
   margin-top: 64px;
 }
 /* Gör texten i p-element större men ändrar inte sidfoten. */
@@ -320,6 +320,12 @@ main p {
 main li {
   font-size: 1.25rem;
 }
+main > article {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 24px;
+}
+
 .recipe-search {
   width: 140px;
 }
