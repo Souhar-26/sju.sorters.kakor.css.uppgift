@@ -124,6 +124,7 @@ a:hover {
 
 .intro-box details > summary {
   order: 2;
+}
 
 .intro-box summary {
   cursor: pointer;
@@ -183,7 +184,7 @@ a:hover {
   font: inherit;
   max-width: 100%;
 }
-/* Placera navigerringen högst upp i sidhuvudet och ordnar innehållet på rad. */
+/* Placerar navigeringen högst upp i sidhuvudet och ordnar innehållet på en rad. */
 .topnav {
   position: absolute;
   top: 15px;
@@ -195,7 +196,7 @@ a:hover {
   align-items: center;
   gap: 20px;
 }
-/* Ger menys sista element, inloggningsknappen, avstånd från högerkanten. */
+/* Ger menyns sista element, inloggningsknappen, avstånd till högerkanten. */
 .topnav > :last-child {
   margin-right: 20px;
 }
